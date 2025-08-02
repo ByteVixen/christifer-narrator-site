@@ -2,81 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Christifer D. Ewing - Audiobook Narrator | Sonorous, Resonating Baritone | Fantasy, Romance, Thriller, and more." />
-  <title>Christifer D. Ewing | Narrator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Christifer D. Ewing | The Narrator & The Cat</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <div id="vanta-bg">
     <header>
-      <img src="images/logo.png" alt="Christifer D. Ewing Logo" class="logo" />
+      <img src="images/logo.png" alt="Christifer's Logo" class="logo" />
       <h1>Christifer D. Ewing</h1>
-      <p class="tagline">Resonating. Sonorous. Baritone. Flexible.</p>
+      <p class="tagline">Resonating · Sonorous · Baritone · Flexible</p>
     </header>
 
-    <section class="about">
-      <h2>Genres</h2>
-      <p>Fantasy · Romance · Sci-Fi · Horror · Thriller · LGBTQ+ · Mystery · Historical</p>
+    <section>
+      <h2>🎧 Genres</h2>
+      <p>Fantasy, Romance, Sci-Fi, Horror, Thriller, LGBTQ+, Mystery, Historical</p>
     </section>
 
-    <section class="featured">
+    <section>
       <h2>✨ Featured Titles</h2>
       <div class="book-grid">
-        <img src="images/book1.png" alt="Featured Book 1" loading="lazy" />
-        <img src="images/book2.png" alt="Featured Book 2" loading="lazy" />
-        <img src="images/book3.png" alt="Featured Book 3" loading="lazy" />
+        <img src="images/book1.png" alt="Book 1"/>
+        <img src="images/book2.png" alt="Book 2"/>
+        <img src="images/book3.png" alt="Book 3"/>
       </div>
     </section>
 
-    <section class="testimonials">
-      <h2>💬 Testimonials</h2>
-      <blockquote>
-        “Christifer’s voice doesn’t just read the story—it *haunts* you long after.”
-      </blockquote>
-      <blockquote>
-        “Rich, captivating, and unforgettable. A master of tone and emotion.”
-      </blockquote>
-    </section>
-
-    <section class="cat">
-      <h2>🐈 Matrix: The Real Talent</h2>
-      <img src="images/cat.png" alt="Matrix the Cat" class="cat-img" />
-      <p>Matrix is a tabby-Maine Coon mix who doesn’t care much for people, but absolutely adores me. He’s vocal, cuddly, and has a habit of smashing his face into surfaces (or my shoulder) to sleep. If you hear purring during a take, you’ve met him already.</p>
-    </section>
-
-    <section class="audio audio-player">
+    <section class="audio-player">
       <h2>🎙️ Audio Samples</h2>
       <audio controls>
-        <source src="audio/sample1.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <audio controls>
-        <source src="audio/sample2.mp3" type="audio/mpeg" />
+        <source src="sample1.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
     </section>
 
-    <section class="media">
+    <section>
+      <h2>💬 Testimonials</h2>
+      <blockquote>
+        "Christifer brings a hypnotic resonance to every word—utterly unforgettable."
+      </blockquote>
+      <blockquote>
+        "His narration elevated the story to something cinematic."
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>🐈 The Real Talent</h2>
+      <img src="images/cat.png" alt="Matrix the Cat" class="cat-img"/>
+      <p>Meet Matrix, my tabby/Maine Coon co-narrator. He doesn’t like most people—except me. He drinks from water bottles, yells at the birds, and sleeps by smashing his face into me. The true diva of the studio.</p>
+    </section>
+
+    <section>
       <h2>📥 Media Kit</h2>
-      <a href="downloads/christifer_ewing_kit.pdf" class="media-kit" download>Download Media Kit</a>
+      <a href="media-kit.pdf" class="media-kit" download>Download Media Kit</a>
     </section>
 
     <footer>
       <h2>🔗 Connect</h2>
       <div class="social-icons">
-        <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener">
-          <img src="images/instagram.png" alt="Instagram" />
-        </a>
-        <a href="https://www.tiktok.com/@yourprofile" target="_blank" rel="noopener">
-          <img src="images/tiktok.webp" alt="TikTok" />
-        </a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram"/></a>
+        <a href="https://www.tiktok.com/" target="_blank"><img src="images/tiktok.webp" alt="TikTok"/></a>
       </div>
-      <p>📧 <a href="mailto:vadewing@gmail.com" style="color: var(--gold); text-decoration: none;">vadewing@gmail.com</a></p>
+      <p>📧 <a href="mailto:vadewing@gmail.com">vadewing@gmail.com</a></p>
     </footer>
   </div>
+
+<script src="three.r134.min.js"></script>
+<script src="vanta.birds.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    VANTA.BIRDS({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color1: 0xc300ff,
+      color2: 0x0e00ff,
+      colorMode: "lerp",
+      birdSize: 1.50,
+      speedLimit: 4.00,
+      separation: 22.00
+    });
+  });
+</script>
 </body>
 </html>
